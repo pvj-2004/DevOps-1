@@ -1,0 +1,20 @@
+name: First CI — hello
+
+on:
+  push:            # run when you push any branch
+  workflow_dispatch: # also allow manual runs from GitHub UI
+
+jobs:
+  hello:
+    name: Say hello and list files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Say hello
+        run: |
+          echo "Hello from GitHub Actions!"
+          echo "Current dir: $(pwd)"
+          ls -la
