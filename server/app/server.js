@@ -14,7 +14,7 @@ app.get('/api/hello', (req, res) => {
 
 // About route
 app.get('/about', (req, res) => {
-  res.send('<h1>About Page</h1><p>This is running inside Docker!</p>');
+  res.send('<h1>About Page</h1><p>This is running inside Docker Container!</p>');
 });
 
 app.listen(PORT, () => {
