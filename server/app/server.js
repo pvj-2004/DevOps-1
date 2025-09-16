@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 
 // Hello route
 app.get('/api/hello', (req, res) => {
-  res.send('<h1>Welcome to My Dockerized Node App</h1>');
+  res.send('<h1>Hello Welcome to My Dockerized Node App</h1>');
 });
 
 // About route
